@@ -1,0 +1,39 @@
+<html>
+<body>
+<link rel="stylesheet" href="css/form_styles.css">
+<div id="ticket_form">
+<div class="title">Submit a ticket</div>
+
+<div>"We have a new employee" ticket should be opened by the supervisor and must include:
+<form action="new_employee_ticket.php" method="post">
+<ul>
+  
+   <li>Subject: New Employee</li>
+
+   <li>Body: Several "child" tickets will be created as a result of this "New Employee"
+  	   Parent ticket. Please enter the new employee information</li>
+    <li><input type="text" placeholder="New Employee Name (required)" 
+               name="newname" class="field" required></li>
+    <li><input type="email" placeholder="New Employee Current Email Address (required)" 
+               name="newcurremail" class="field" required></li>
+    <li><input type="text" placeholder="New Employee Current Phone (optional)" 
+               name="newcurrphone" class="field"></li>
+    <li><input type="date" placeholder="New Employee Start Date (optional)" 
+               name="startdate" class="field"></li>
+    <li><input type="text" placeholder="New Employee UID (optional)" 
+               name="uid" class="field"></li>
+    <li><input type="text" placeholder="New Employee UCLA Logon (optional)" 
+               name="uclalogon" class="field"></li>
+    <li><input type="text" placeholder="Supervisor Name (required)" 
+               name="supervisorname" class="field" required></li>
+    <li><input type="email" placeholder="Supervisor Email (required)"
+               name="supervisoremail" class="field" required></li>
+    <div class="register"><a href="https://psych.zendesk.com/auth/v2/login/registration" target="_blank">Register</a> so our support team can email you to solve your problem.</div>
+  </li>
+  
+  <li><input type="submit" value="Submit"></li> 
+</ul>
+</form>
+</div>
+</body>
+</html>
